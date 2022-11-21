@@ -1,16 +1,13 @@
-import './App.css';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Main from './components/Main/Main';
-
+import React from 'react';
+import Footer from './components/Footer/Footer.js'
+import Header from './components/Header/Header.jsx'
 function App() {
   return (
     <>
       <Header />
-      <Main />
-      <Footer />
+     <Footer />
     </>
   );
 }
-
+  
 export default App;
