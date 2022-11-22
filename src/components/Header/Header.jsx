@@ -9,7 +9,7 @@ function NavScrollExample() {
   return (
     <Navbar expand="lg" style={{background: 'green'}}>
       <Container fluid>
-        <Navbar.Brand href="#" style={{color: 'darkred'}}>Magic Dragon</Navbar.Brand>
+        <Navbar.Brand href="#" style={{color: 'darkred', fontSize: 'xx-large', fontWeight: '700'}}>Magic Dragon</Navbar.Brand>
         <Navbar/>
           <Nav
             className="me-auto my-2 my-lg-0"

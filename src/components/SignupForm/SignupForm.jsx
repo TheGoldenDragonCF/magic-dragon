@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 // import './form.scss';
 
-function SigninForm(props) {
+function SignupForm(props) {
   let [formData, setFormInput] = useState();
 
   let handleInputChange = (e) => {
@@ -34,6 +34,30 @@ function SigninForm(props) {
           </Form.Text>
         </Form.Group>
         <Form.Group>
+          <Form.Label>First Name</Form.Label>
+          <Form.Control 
+            name='firstName'
+            type='text'
+            onChange={handleInputChange}
+            placeholder='Joe'
+            />
+          <Form.Text>
+            Please enter your first Name
+          </Form.Text>
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Last Name</Form.Label>
+          <Form.Control 
+            name='LastName'
+            type='text'
+            onChange={handleInputChange}
+            placeholder='Smoe'
+            />
+          <Form.Text>
+            Please enter your Last Name
+          </Form.Text>
+        </Form.Group>
+        <Form.Group>
           <Form.Label>Password</Form.Label>
           <Form.Control 
             name='password'
@@ -45,10 +69,22 @@ function SigninForm(props) {
             Please enter password
           </Form.Text>
         </Form.Group>
-          <Button type='submit'>Sign in</Button>
+        <Form.Group>
+          <Form.Label>Confirm Password</Form.Label>
+          <Form.Control 
+            name='confirmPassword'
+            type='password'
+            onChange={handleInputChange}
+            placeholder='Password'
+            />
+          <Form.Text>
+            Please re-enter password
+          </Form.Text>
+        </Form.Group>
+          <Button type='submit'>Sign up</Button>
       </Form>
     </>
   );
 }
 
-export default SigninForm;
+export default SignupForm;

@@ -5,12 +5,10 @@ import Card from 'react-bootstrap/Card';
 
 function Menu() {
   let menu = useSelector((state) => state.menu).menuItems
-  console.log(menu)
   
-  let menuList = menu.map(item => {
-    console.log(item.picture)
+  let menuList = menu.map((item, idx) => {
     return (
-      <Card style={{border: 'none',borderBottom: 'solid lightgrey', borderRadius: '0'}}>
+      <Card style={{border: 'none',borderBottom: 'solid lightgrey', borderRadius: '0'}} key={idx}>
         <Card.Body style={{display: 'flex'}}>
         <Card.Img variant="top" src={item.picture} style={{ width: '18rem', paddingRight: '1rem' }}/>
           <span>
