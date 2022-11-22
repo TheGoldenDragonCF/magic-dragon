@@ -6,7 +6,6 @@ import store from './store';
 import Menu from './components/Menu/Menu.jsx';
 
 function App() {
-  console.log(store);
   return (
     <Provider store={store}>
       <Header />
