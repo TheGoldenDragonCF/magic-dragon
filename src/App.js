@@ -6,11 +6,13 @@ import store from './store';
 import Menu from './components/Menu/Menu.jsx';
 import SiginForm from './components/SigninForm/SigninForm.jsx';
 import SignupForm from './components/SignupForm/SignupForm.jsx';
+import Hero from './components/Hero/Hero.jsx';
 
 function App() {
   return (
     <Provider store={store}>
       <Header />
+      <Hero />
       {/* <SiginForm /> */}
       {/* <SignupForm /> */}
       <Menu />
