@@ -7,20 +7,20 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavScrollExample() {
   return (
-    <Navbar bg="primary" expand="lg">
+    <Navbar expand="lg" style={{background: 'green'}}>
       <Container fluid>
-        <Navbar.Brand href="#">Magic Dragon</Navbar.Brand>
+        <Navbar.Brand href="#" style={{color: 'darkred', fontSize: 'xx-large', fontWeight: '700'}}>Magic Dragon</Navbar.Brand>
         <Navbar/>
           <Nav
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
           >
-            <Nav.Link href="#action1">Combos</Nav.Link>
-            <Nav.Link href="#action2">Menu</Nav.Link>
+            <Nav.Link href="#action1" style={{color: 'yellow'}}>Combos</Nav.Link>
+            <Nav.Link href="#action2" style={{color: 'yellow'}}>Menu</Nav.Link>
           </Nav>
         <Nav>
-            <Nav.Link href="#action1">Login</Nav.Link>
-            <Nav.Link href="#action1">Cart 🛒</Nav.Link>
+            <Nav.Link href="#action1" style={{color: 'yellow'}}>Login</Nav.Link>
+            <Nav.Link href="#action1" style={{color: 'yellow'}}>Cart 🛒</Nav.Link>
         </Nav>
       </Container>
     </Navbar>
