@@ -3,8 +3,10 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 // import productReducer from './products';
 import { cartReducer } from './cart';
 import thunk from 'redux-thunk';
+import { menuReducer } from './menu.js';
 
 const reducers = {
+  menu: menuReducer,
   // categories: categoryReducer,
   // products: productReducer,
   cart: cartReducer,
