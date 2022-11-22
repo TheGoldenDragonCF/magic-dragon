@@ -10,7 +10,7 @@ function Menu() {
   let menuList = menu.map(item => {
     console.log(item.picture)
     return (
-      <Card >
+      <Card style={{border: 'none',borderBottom: 'solid lightgrey', borderRadius: '0'}}>
         <Card.Body style={{display: 'flex'}}>
         <Card.Img variant="top" src={item.picture} style={{ width: '18rem', paddingRight: '1rem' }}/>
           <span>
@@ -26,7 +26,7 @@ function Menu() {
     )
   })
   return (
-    <div style={{width: '80%', margin: 'auto'}}>
+    <div style={{width: '60%', margin: 'auto'}}>
     <h1 style={{textAlign: 'center'}}>Menu</h1>
     <p style={{textAlign: 'center'}}>Choose from our Made fresh daily entree</p>
     {menuList}
