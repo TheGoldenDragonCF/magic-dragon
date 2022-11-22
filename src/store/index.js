@@ -4,11 +4,11 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { cartReducer } from './cart';
 import thunk from 'redux-thunk';
 import { menuReducer } from './menu.js';
+import { comboReducer } from './combo';
 
 const reducers = {
   menu: menuReducer,
-  // categories: categoryReducer,
-  // products: productReducer,
+  combo: comboReducer,
   cart: cartReducer,
 };
 

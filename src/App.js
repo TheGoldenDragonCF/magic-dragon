@@ -7,14 +7,16 @@ import Menu from './components/Menu/Menu.jsx';
 import SiginForm from './components/SigninForm/SigninForm.jsx';
 import SignupForm from './components/SignupForm/SignupForm.jsx';
 import Hero from './components/Hero/Hero.jsx';
+import Combo from './components/Combo/Combo.jsx';
 
 function App() {
   return (
     <Provider store={store}>
       <Header />
       <Hero />
-      {/* <SiginForm /> */}
-      {/* <SignupForm /> */}
+      <Combo />
+      {/* <SiginForm />
+      <SignupForm /> */}
       <Menu />
       <Footer />
     </Provider>
