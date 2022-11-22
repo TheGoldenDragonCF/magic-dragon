@@ -2,44 +2,7 @@
 // console.log(menuItems);
 
 const initialState = {
-  total: 8,
-  menuItems: [
-    {
-      name: 'Beef and Broccoli',
-      price: '8',
-      picture: '/images/foodItems/beef&Broccoli.png',
-      description: 'Sauteed beef with steamed broccoli',
-    },
-    {
-      name: 'Chow Mein',
-      price: '8',
-      picture: 'images/foodItems/chowMein.png',
-      description: 'Fried Noodles',
-    },
-    {
-      name: 'Honey Sesame Chicken',
-      price: '8',
-      picture: 'images/foodItems/honeySesameChicken.png',
-      description: 'Honey Glazed fried chicken',
-    },
-    {
-      name: 'Kung Pao Chicken',
-      price: '8',
-      picture: 'images/foodItems/kungPaoChicken.png',
-      description: 'Chicken with Vegetables',
-    },
-    {
-      name: 'Orange Chicken',
-      price: '8',
-      picture: 'images/foodItems/orangeChicken.png',
-      description: 'Crispy fried chicken with an orange glaze ',
-    },
-    {
-      name: 'Teriyaki Chicken',
-      price: '8',
-      picture: 'images/foodItems/teriyakiChicken.png',
-      description: 'Chicken all the way from Teriyaki, Japan',
-    },
+  sides: [
     {
       name: 'White Rice',
       price: '8',
@@ -51,6 +14,40 @@ const initialState = {
       price: '8',
       picture: 'images/foodItems/friedRice.png',
       description: 'Fried rice',
+    },
+    {
+      name: 'Chow Mein',
+      price: '8',
+      picture: 'images/foodItems/chowMein.png',
+      description: 'Fried Noodles',
+    },
+  ],
+  entrees: [
+    {
+      name: 'Beef and Broccoli',
+      picture: '/images/foodItems/beef&Broccoli.png',
+      description: 'Sauteed beef with steamed broccoli',
+    },
+
+    {
+      name: 'Honey Sesame Chicken',
+      picture: 'images/foodItems/honeySesameChicken.png',
+      description: 'Honey Glazed fried chicken',
+    },
+    {
+      name: 'Kung Pao Chicken',
+      picture: 'images/foodItems/kungPaoChicken.png',
+      description: 'Chicken with Vegetables',
+    },
+    {
+      name: 'Orange Chicken',
+      picture: 'images/foodItems/orangeChicken.png',
+      description: 'Crispy fried chicken with an orange glaze ',
+    },
+    {
+      name: 'Teriyaki Chicken',
+      picture: 'images/foodItems/teriyakiChicken.png',
+      description: 'Chicken all the way from Teriyaki, Japan',
     },
   ],
 };
