@@ -1,19 +1,18 @@
 import React from 'react';
+import '../../css/Hero.css';
 
 export default function Hero() {
   return (
-    <header style={{ paddingLeft: 0 }}>
+    <header className='hero-header'>
       <div
-        className='p-5 text-center bg-image'
-        style={{ backgroundImage: "url('https://i0.wp.com/bhamnow.com/wp-content/uploads/2020/04/Yoe-Express.jpg?w=853&ssl=1')", height: 400 }}
-      >
-        <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-          <div className='d-flex justify-content-center align-items-center h-100'>
+        className='p-5 text-center bg-image hero-img'>
+        <div className='mask-hero'>
+          <div className='d-flex justify-content-center align-items-center h-100 hero-banner-img'>
             <div className='text-white'>
               <h1 className='mb-3'>Heading</h1>
               <h4 className='mb-3'>Subheading</h4>
-              <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
-                Call to action
+              <a className='btn btn btn-primary btn-outline-light btn-lg' href='#!' role='button'>
+                ORDER
               </a>
             </div>
           </div>

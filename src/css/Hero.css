@@ -1,0 +1,21 @@
+.hero-header {
+  padding-Left: 0;
+}
+
+.hero-img {
+  background-image: url('https://i2-prod.lincolnshirelive.co.uk/news/local-news/article1731956.ece/ALTERNATES/s615/chinese.jpg');
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-Color: rgba(0, 0, 0, 0.6);
+  opacity: 50;
+  image-resolution: 1000dpi;
+}
+
+
+
+.mb-3 {
+  color: black;
+}
+
