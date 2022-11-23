@@ -6,7 +6,6 @@ import Card from 'react-bootstrap/Card';
 function Menu() {
   let sides = useSelector((state) => state.menu).sides
   let entrees = useSelector((state) => state.menu).entrees
-  console.log(entrees)
   
   let sidesList = sides.map((item, idx) => {
     return (

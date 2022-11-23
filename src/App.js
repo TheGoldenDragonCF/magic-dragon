@@ -8,11 +8,13 @@ import SiginForm from './components/SigninForm/SigninForm.jsx';
 import SignupForm from './components/SignupForm/SignupForm.jsx';
 import Hero from './components/Hero/Hero.jsx';
 import Combo from './components/Combo/Combo.jsx';
+import OrderForm from './components/OrderForm/OrderForm.jsx';
 
 function App() {
   return (
     <Provider store={store}>
       <Header />
+      <OrderForm />
       <Hero />
       <Combo />
       {/* <SiginForm /> */}
