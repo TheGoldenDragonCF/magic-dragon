@@ -15,7 +15,7 @@ function App() {
   return (
     <Provider store={store}>
       <Header />
-      {/* <Cart /> */}
+      <Cart />
       {/* <OrderForm /> */}
       <Hero />
       <Combo />

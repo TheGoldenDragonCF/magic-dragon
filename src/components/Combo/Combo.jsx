@@ -5,7 +5,6 @@ import Card from 'react-bootstrap/Card';
 
 function Combo() {
   let comboList = useSelector(state => state.combo)
-  console.log(comboList)
 
   let combos = comboList.map((combo, idx) => {
   return (

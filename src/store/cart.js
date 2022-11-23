@@ -1,7 +1,20 @@
 const initialState = {
   show: true,
   total: 0,
-  products: [],
+  items: [
+    {
+      combo: '#1 Magic Bowl',
+      side: 'White Rice',
+      entree: 'Beef and Broccoli',
+      price: 8,
+    },
+    {
+      combo: '#1 Magic Bowl',
+      side: 'White Rice',
+      entree: 'Kung Pao Chicken',
+      price: 8,
+    },
+  ],
 };
 
 function addToCart(payload) {
