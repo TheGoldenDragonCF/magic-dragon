@@ -5,7 +5,6 @@ import Card from 'react-bootstrap/Card';
 
 function Combo() {
   let comboList = useSelector(state => state.combo)
-  console.log(comboList)
 
   let combos = comboList.map((combo, idx) => {
   return (
@@ -14,7 +13,7 @@ function Combo() {
       <Card.Body>
         <Card.Title>{combo.name}</Card.Title>
         <Card.Text>{combo.description1}</Card.Text>
-        <Card.Text style={{color: 'red'}}>{combo.price}</Card.Text>
+        <Card.Text style={{color: 'red'}}>${combo.price}</Card.Text>
         <Card.Text>{combo.description2}</Card.Text>
       </Card.Body>
     </Card>

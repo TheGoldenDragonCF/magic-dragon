@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
 // import './form.scss';
 
 function SigninForm(props) {
@@ -20,6 +21,16 @@ function SigninForm(props) {
 
   return (
     <>
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">Sign In</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
       <Form onSubmit={handleSubmit} style={{width: '50%', margin: 'auto'}}>
         <Form.Group>
           <Form.Label>Email</Form.Label>
@@ -47,6 +58,11 @@ function SigninForm(props) {
         </Form.Group>
           <Button type='submit'>Sign in</Button>
       </Form>
+      </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 }
