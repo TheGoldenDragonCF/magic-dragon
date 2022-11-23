@@ -30,6 +30,29 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    
+     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@600&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+      .blink {
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+      }
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-webkit-keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      </style>
+
+    <script src="https://kit.fontawesome.com/3690747da3.js" crossorigin="anonymous"></script>
+    
     <title>React App</title>
   </head>
   <body>
