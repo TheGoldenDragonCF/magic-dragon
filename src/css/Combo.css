@@ -1,0 +1,65 @@
+.container {
+ justify-content: space-between;
+ width: 18rem;
+}
+ 
+.combo-container {
+ text-Align: center;
+}
+  
+.combo-title {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.div-container {
+  display: flex; 
+  width: 80%; 
+  margin: auto;
+}
+
+.h3, .h4 {
+  color: blue;
+}
+
+.combo-price {
+  color: red;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.combo-name {
+  font-size: 24px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.combo-description1 {
+  font-size: 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.combo-description2 {
+  animation: blinker time_in_seconds up_to_blink_time;
+  color: red;
+  font-size: 25px;
+  font-family: "Vibur", sans-serif;
+  background-color: #010a01;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+@keyframes blinker {
+60% {
+opacity: 0;
+
+} 
+}

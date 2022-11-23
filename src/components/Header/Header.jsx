@@ -4,23 +4,26 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import '../../css/Header.css';
+
+
+
 
 function NavScrollExample() {
   return (
-    <Navbar expand="lg" style={{background: 'green'}}>
+    <Navbar className='header-navbar' expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#" style={{color: 'darkred', fontSize: 'xx-large', fontWeight: '700'}}>Magic Dragon</Navbar.Brand>
+        <Navbar.Brand  className='company-logo' href="#">Magic Dragon</Navbar.Brand>
         <Navbar/>
           <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-          >
-            <Nav.Link href="#action1" style={{color: 'yellow'}}>Combos</Nav.Link>
-            <Nav.Link href="#action2" style={{color: 'yellow'}}>Menu</Nav.Link>
+            className="me-auto my-2 my-lg-0 hero-nav">
+            <Nav.Link className='hero-combo' href="#action1">Combos</Nav.Link>
+            <Nav.Link className='hero-menu' href="#action2">Menu</Nav.Link>
           </Nav>
         <Nav>
-            <Nav.Link href="#action1" style={{color: 'yellow'}}>Login</Nav.Link>
-            <Nav.Link href="#action1" style={{color: 'yellow'}}>Cart 🛒</Nav.Link>
+            <Nav.Link className='hero-login' href="#action1">Login</Nav.Link>
+            <Nav.Link className='hero-cart' href="#action1"><i className='fa-sharp fa-solid fa-cart-shopping'></i></Nav.Link>
+            
         </Nav>
       </Container>
     </Navbar>

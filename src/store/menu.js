@@ -16,10 +16,10 @@ const initialState = {
       description: 'Fried rice',
     },
     {
-      name: 'Chow Mein',
+      name: 'Special Chow Mein',
       price: '8',
       picture: 'images/foodItems/chowMein.png',
-      description: 'Fried Noodles',
+      description: 'So satisfying with meat or without, vegetables, classic chow mein noodles, and the best homemade chow mein sauce.',
     },
   ],
   entrees: [
@@ -32,22 +32,22 @@ const initialState = {
     {
       name: 'Honey Sesame Chicken',
       picture: 'images/foodItems/honeySesameChicken.png',
-      description: 'Honey Glazed fried chicken',
+      description: 'This honey chicken is crispy pieces of chicken breast that are fried to golden brown perfection, then tossed in a sweet and savory honey sauce.',
     },
     {
       name: 'Kung Pao Chicken',
       picture: 'images/foodItems/kungPaoChicken.png',
-      description: 'Chicken with Vegetables',
+      description: 'Is highly addictive stir-fried chicken with the perfect combination of salty, sweet and spicy flavour!',
     },
     {
       name: 'Orange Chicken',
       picture: 'images/foodItems/orangeChicken.png',
-      description: 'Crispy fried chicken with an orange glaze ',
+      description: 'It is a sweet orange sauce made with orange juice, vinegar, garlic, sugar, soy sauce, ginger, red chili flakes, and orange zest. It is both sweet and spicy and full of flavor.',
     },
     {
       name: 'Teriyaki Chicken',
       picture: 'images/foodItems/teriyakiChicken.png',
-      description: 'Chicken all the way from Teriyaki, Japan',
+      description: 'Teriyaki that is grilled meat with a simple glaze made of soy sauce, mirin, sake, and sugar.',
     },
   ],
 };
