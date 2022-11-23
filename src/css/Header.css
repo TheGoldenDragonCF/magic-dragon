@@ -1,0 +1,22 @@
+.header-navbar {
+  background-color: green;
+}
+
+.company-logo {
+  color: darkred;
+  font-size: 40px !important; 
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif !important;
+  -webkit-text-stroke: 1px rgb(255,215,0);
+}
+
+.hero-nav {
+  max-height: 100px;
+}
+
+.hero-combo, .hero-menu, .hero-login, .hero-cart {
+  color: rgb(255,215,0);
+  font-size: 25px;
+  -webkit-text-stroke: 0.2px whitesmoke;
+}
+

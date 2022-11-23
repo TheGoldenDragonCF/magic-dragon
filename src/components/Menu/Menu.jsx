@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import '../../css/Menu.css';
 
 function Menu() {
   let sides = useSelector((state) => state.menu).sides
@@ -9,12 +10,12 @@ function Menu() {
   
   let sidesList = sides.map((item, idx) => {
     return (
-      <Card style={{border: 'none',borderBottom: 'solid lightgrey', borderRadius: '0'}} key={idx}>
-        <Card.Body style={{display: 'flex'}}>
-        <Card.Img variant="top" src={item.picture} style={{ width: '18rem', paddingRight: '1rem' }}/>
-          <span style={{padding: '70px 0'}}>
-          <Card.Title>{item.name}</Card.Title>
-          <Card.Text>
+      <Card className='menu-container' key={idx}>
+        <Card.Body className='menu-body'>
+        <Card.Img className='menu-img' variant="top" src={item.picture}/>
+          <span className='menu-span'>
+          <Card.Title className='menu-name'>{item.name}</Card.Title>
+          <Card.Text className='menu-description'>
             {item.description}
           </Card.Text>
           </span>
@@ -25,12 +26,12 @@ function Menu() {
 
   let entreesList = entrees.map((item, idx) => {
     return (
-      <Card style={{border: 'none',borderBottom: 'solid lightgrey', borderRadius: '0'}} key={idx}>
-        <Card.Body style={{display: 'flex'}}>
-        <Card.Img variant="top" src={item.picture} style={{ width: '18rem', paddingRight: '1rem' }}/>
-          <span style={{padding: '70px 0'}}>
-          <Card.Title>{item.name}</Card.Title>
-          <Card.Text>
+      <Card className='entreesList' key={idx}>
+        <Card.Body className='entreesList-body'>
+        <Card.Img className='entreeList-img' variant="top" src={item.picture}/>
+          <span className='entreesList-span'>
+          <Card.Title className='entreesList-name'>{item.name}</Card.Title>
+          <Card.Text className='entreesList-description'>
             {item.description}
           </Card.Text>
           </span>
@@ -39,12 +40,12 @@ function Menu() {
     )
   })
   return (
-    <div style={{width: '60%', margin: 'auto'}}>
-    <h1 style={{textAlign: 'center', paddingTop: '3rem'}}>Menu</h1>
-    <p style={{textAlign: 'center'}}>Choose from our Made fresh daily entree</p>
-    <h2 style={{textAlign: 'center'}}>Sides</h2>
+    <div className='menu-div'>
+    <h1 className='menu-title'>Menu</h1>
+    <p className='menu-p'>Choose from our Made fresh daily entree</p>
+    <h2 className='menu-h2'>Sides</h2>
     {sidesList}
-    <h2 style={{textAlign: 'center', paddingTop: '3rem'}}>Entrees</h2>
+    <h2 className='menu-h3'>Entrees</h2>
     {entreesList}
     </div>
   )
