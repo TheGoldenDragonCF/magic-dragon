@@ -6,12 +6,7 @@ const initialState = [
     picture: '	https://thumbs.dreamstime.com/b/asian-beef-broccol…rice-close-up-horizontal-plate-table-48399782.jpg',
     price: '$8.99 +Tax',
     description2: 'Succulent!',
-
-    picture:
-      '	https://thumbs.dreamstime.com/b/asian-beef-broccol…rice-close-up-horizontal-plate-table-48399782.jpg',
-    price: 8.99,
-    description2: '',
-
+   
   },
   {
     name: '#2 Magic Platter',
@@ -20,12 +15,6 @@ const initialState = [
     picture: 'https://thumbs.dreamstime.com/b/homemade-orange-chicken-rice-26454555.jpg',
     price: '$10.99 +Tax',
     description2: 'To Die For!',
-
-    picture:
-      'https://thumbs.dreamstime.com/b/homemade-orange-chicken-rice-26454555.jpg',
-    price: 10.99,
-    description2: '',
-
   },
   {
     name: '#3 Dragon Combo',
