@@ -9,7 +9,7 @@ import '../../css/Header.css';
 
 
 
-function NavScrollExample() {
+function NavScrollExample(props) {
   return (
     <Navbar className='header-navbar' expand="lg">
       <Container fluid>
@@ -21,9 +21,14 @@ function NavScrollExample() {
             <Nav.Link className='hero-menu' href="#action2">Menu</Nav.Link>
           </Nav>
         <Nav>
+
             <Nav.Link className='hero-login' href="#action1">Login</Nav.Link>
             <Nav.Link className='hero-cart' href="#action1"><i className='fa-sharp fa-solid fa-cart-shopping'></i></Nav.Link>
             
+
+            <Nav.Link href="#action1" style={{color: 'yellow'}} onClick={props.showSignin}>Login</Nav.Link>
+            <Nav.Link style={{color: 'yellow'} } onClick={props.showCart}>Cart 🛒</Nav.Link>
+
         </Nav>
       </Container>
     </Navbar>
