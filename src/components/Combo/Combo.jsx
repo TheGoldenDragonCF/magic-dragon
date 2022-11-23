@@ -24,7 +24,7 @@ function Combo() {
   return (
     <div style={{textAlign: 'center'}}>
       <h1>Combos</h1>
-      <div className='combo-container' style={{display: 'flex', width: '80%', margin: 'auto'}}>
+      <div className='combo-container' style={{display: 'flex', width: '80%', margin: 'auto', justifyContent: 'space-around'}}>
       {combos}
 
       </div>
