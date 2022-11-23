@@ -9,12 +9,14 @@ import SignupForm from './components/SignupForm/SignupForm.jsx';
 import Hero from './components/Hero/Hero.jsx';
 import Combo from './components/Combo/Combo.jsx';
 import OrderForm from './components/OrderForm/OrderForm.jsx';
+import Cart from './components/Cart/Cart.jsx';
 
 function App() {
   return (
     <Provider store={store}>
       <Header />
-      <OrderForm />
+      {/* <Cart /> */}
+      {/* <OrderForm /> */}
       <Hero />
       <Combo />
       {/* <SiginForm /> */}

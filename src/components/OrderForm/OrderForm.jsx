@@ -12,7 +12,6 @@ function OrderForm(props) {
     combo: combo[0]
   });
 
-  console.log(formData)
   
   let comboOptions = combo.map((el, idx) => {
     return (
