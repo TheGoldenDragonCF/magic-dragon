@@ -1,18 +1,19 @@
 const initialState = {
   show: true,
-  total: 0,
+  totalItems: 2,
+  totalPrice: 17.98,
   items: [
     {
       combo: '#1 Magic Bowl',
-      side: 'White Rice',
-      entree: 'Beef and Broccoli',
-      price: 8,
+      side1: 'White Rice',
+      entree1: 'Beef and Broccoli',
+      total: 8.99,
     },
     {
       combo: '#1 Magic Bowl',
-      side: 'White Rice',
-      entree: 'Kung Pao Chicken',
-      price: 8,
+      side1: 'White Rice',
+      entree1: 'Kung Pao Chicken',
+      total: 8.99,
     },
   ],
 };
@@ -27,10 +28,14 @@ function addToCart(payload) {
 function cartReducer(state = initialState, action) {
   switch (action.type) {
     case 'ADD_TO_CART':
+      console.log('added');
+      console.log(state);
+      console.log(action.payload);
       return {
         ...state,
-        total: state.total + 1,
-        products: [...state.products, action.payload],
+        totalItems: state.totalItems + 1,
+        totalPrice: state.totalPrice + action.payload.total,
+        items: [...state.items, action.payload],
       };
     default:
       return state;

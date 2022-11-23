@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function NavScrollExample() {
+function NavScrollExample(props) {
   return (
     <Navbar expand="lg" style={{background: 'green'}}>
       <Container fluid>
@@ -19,8 +19,8 @@ function NavScrollExample() {
             <Nav.Link href="#action2" style={{color: 'yellow'}}>Menu</Nav.Link>
           </Nav>
         <Nav>
-            <Nav.Link href="#action1" style={{color: 'yellow'}}>Login</Nav.Link>
-            <Nav.Link href="#action1" style={{color: 'yellow'}}>Cart 🛒</Nav.Link>
+            <Nav.Link href="#action1" style={{color: 'yellow'}} onClick={props.showSignin}>Login</Nav.Link>
+            <Nav.Link style={{color: 'yellow'} } onClick={props.showCart}>Cart 🛒</Nav.Link>
         </Nav>
       </Container>
     </Navbar>
